@@ -71,3 +71,28 @@ These tools form a production-grade security foundation for backend services.
 │                       ├── service/
 │                       └── util/
 └── pom.xml
+
+```
+## Architecture Diagram (JWT Flow)
+
+```bash
++-----------+        Login Request        +------------------+
+|   Client  | ---------------------------> | Auth Controller  |
++-----------+                              +------------------+
+                                                |
+                                                v
+                                    +---------------------------+
+                                    | Generate Access + Refresh |
+                                    |       Tokens             |
+                                    +---------------------------+
+                                                |
+                                                v
++-----------+   Protected Request w/ JWT    +------------------+
+|   Client  | ----------------------------> | JWT Filter       |
++-----------+                                (Validates Token) |
+                                                |
+                                                v
+                                        +---------------+
+                                        | Controller    |
+                                        |   Handler     |
+                                        +---------------+
