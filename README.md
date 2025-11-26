@@ -47,8 +47,8 @@ The login and refresh endpoints use clearly defined DTOs for request and respons
 - **Lombok** — Reduces boilerplate in entities and DTOs  
   https://projectlombok.org/  
 - **MySQL / H2** — Backend database for user persistence  
-- **BCryptPasswordEncoder** — Secure password hashing algorithm  
-
+- **BCryptPasswordEncoder** — Secure password hashing algorithm
+  
 These tools form a production-grade security foundation for backend services.
 
 ---
