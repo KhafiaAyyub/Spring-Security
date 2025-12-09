@@ -1,5 +1,6 @@
 # Spring-Security
 
+
 # Spring Boot Security with JWT & Refresh Token
 
 This project implements a complete authentication layer using Spring Boot, Spring Security, and JWT. It provides a practical blueprint for token-based authentication in modern backend services. The repository demonstrates how to integrate secure login flows, stateless authorization, and refresh-token rotation into a Java application.
