@@ -7,6 +7,7 @@ This project implements a complete authentication layer using Spring Boot, Sprin
 The code includes configuration, domain models, custom JWT filters, and authorization logic that can be reused or extended in microservices or monolithic systems.
 
 ---
+
 ## Highlights & Techniques Used
 
 ### JWT Access + Refresh Token Workflow  
