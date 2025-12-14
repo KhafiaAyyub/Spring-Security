@@ -15,6 +15,7 @@ The code includes configuration, domain models, custom JWT filters, and authoriz
 The application uses stateless authentication via JSON Web Tokens. Access tokens include user identity and roles in their claims. Refresh tokens allow clients to obtain new access tokens without re-authenticating.  
 JWT basics: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization#bearer_token
 
+
 ### Custom Security Filter Chain  
 A custom filter is added to the Spring Security filter chain. It:
 - Extracts tokens from the `Authorization` header  
